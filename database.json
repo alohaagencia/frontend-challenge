@@ -1,0 +1,25 @@
+[
+	{
+		"_id": 1,
+		"title": "Tomate",
+		"status": 1,
+		"price": 2.15,
+		"created_at":  "2017-03-03T19:08:06.005Z"
+	},
+
+	{
+		"_id": 2,
+		"title": "Bacon",
+		"status": 1,
+		"price": 6.70,
+		"created_at":  "2017-03-03T19:08:06.005Z"
+	},
+
+	{
+		"_id": 3,
+		"title": "Hamburger",
+		"status": 1,
+		"price": 3.45,
+		"created_at":  "2017-03-03T19:08:06.005Z"
+	}
+]
