@@ -24,9 +24,9 @@ O desafio é criar uma lista de compra (não carrinho), os requisitos são:
 ## Como participar:
 
 - Faça um fork deste repositório.
-- Clone o seu fork.
-- Crie um novo branch com o seguinte padrão: `challenge/<seu-nome>`
-- Resolva o desafio da melhor forma possível.
-- Faça uma PR.
+- Clone seu fork na sua máquina.
+- Crie um novo branch com o seguinte padrão `challenge/<seu-nome>`.
+- Resolva o desafio.
+- Faça uma PR para este repositório com instruções claras de como executar seu código.
 
 Após a PR nós iremos avaliar seu código e lhe daremos um feedback.
