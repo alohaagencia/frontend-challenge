@@ -1,18 +1,18 @@
-# Frontend
+# Front-end
 
 Esse teste é para conhecermos seu código e como você resolve problemas.
 
 ## O que será avaliado:
 
-- Como você escreve seu código
-- Como você pensa e resolve problemas
-- Como você utiliza suas ferramentas
+- Como você escreve seu código.
+- Como você pensa e resolve problemas.
+- Como você utiliza suas ferramentas.
 
-Sinta-se a vontade pra usar qualquer biblioteca/framework.
+Sinta-se a vontade para usar qualquer biblioteca/framework.
 
 ## Sobre o desafio
 
-O desafio é criar uma lista de compra (não carrinho), os requisitos:
+O desafio é criar uma lista de compra (não carrinho), os requisitos são:
 
 - A lista inicial deve consumir os dados do arquivo: `database.json`.
 - Listar os items da minha lista de compra.
@@ -23,9 +23,9 @@ O desafio é criar uma lista de compra (não carrinho), os requisitos:
 
 ## Como participar:
 
-- Fork esse repositório.
-- Clone seu repositório.
-- Crie um branch com o seguinte padrão: `challenge/<seu-nome>`
+- Faça um fork deste repositório.
+- Clone o seu fork.
+- Crie um novo branch com o seguinte padrão: `challenge/<seu-nome>`
 - Resolva o desafio da melhor forma possível.
 - Faça uma PR.
 
