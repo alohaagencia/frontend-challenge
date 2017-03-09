@@ -161,7 +161,7 @@ app.filter('DefaultImg', function () {
 });
 
 
-// Menu[lista, comprar]
+// Menu[lista]
 $(function () {
     $('#menu a:last').tab('show');
 });
