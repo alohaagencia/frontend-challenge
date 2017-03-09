@@ -59,14 +59,7 @@
 
                     <ul id="menu" class="nav nav-tabs">
                         <li>
-                            <a href="#lista"
-                                data-ng-click="listaID=''"
-                                data-toggle="tab">
-                                    Listas
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#comprar" data-toggle="tab">Comprar</a>
+                            <a href="#comprar" data-toggle="tab">Lista</a>
                         </li>
                     </ul>
 
@@ -177,7 +170,10 @@
                                                 <span class="add-on">
 													<i class="icon-check"></i>
 												</span>
-                                                <input data-ng-model="produtoStatus" type="text" min="0" placeholder="1">
+												  <select data-ng-model="produtostatus">
+													<option value="comprado">Comprado</option>
+													<option value="não foi comprado">Não foi comprado</option>
+												  </select>
                                             </div>
                                         </div>
                                     </div>
