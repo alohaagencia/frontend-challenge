@@ -1,0 +1,41 @@
+body {
+    padding-top: 40px;
+    background-color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 800px) {
+    body {
+        padding-top: 0px;
+    }
+}
+td.center {
+    padding-left: 2.5%;
+    vertical-align: middle;
+}
+.paper {
+    background-color: rgba(245, 245, 245, 0.75);
+}
+.btn-file {
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+}
+.btn-file > input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transform: translate(-300px, 0) scale(4);
+    -moz-transform: translate(-300px, 0) scale(4);
+    -o-transform: translate(-300px, 0) scale(4);
+    -ms-transform: translate(-300px, 0) scale(4);
+    transform: translate(-300px, 0) scale(4);
+    font-size: 23px;
+    direction: ltr;
+    cursor: pointer;
+}
+input.fix-input {
+    padding-left: 10px;
+}
