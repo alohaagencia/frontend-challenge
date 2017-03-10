@@ -22,7 +22,7 @@ app.controller('cLista', function cLista($scope, $filter) {
     var scp = $scope;
     scp.listaID = scp.listaNome = scp.listas = scp.produtos =
         scp.produtoID = scp.produtoNome = scp.produtoImagem =
-        scp.produtoPreco = scp.produtostatus = scp.produtoQuantidade = scp.imgURL = '';
+        scp.produtoPreco = scp.produtostatus = scp.produtodata = scp.produtoQuantidade = scp.imgURL = '';
 
 /* Listas */
     scp.listas = [
@@ -40,7 +40,8 @@ app.controller('cLista', function cLista($scope, $filter) {
             imagem: 'img/tomate.png',
             nome: 'Tomate',
             preco: 2.15,
-			status: 'comprado',
+			status: 'Não foi comprado',
+			data: '10/03/2017',
             quantidade: 1
         },
         {
@@ -49,7 +50,8 @@ app.controller('cLista', function cLista($scope, $filter) {
             imagem: 'img/bacon.png',
             nome: 'Bacon',
             preco: 6.70,
-			status: 'comprado',
+			status: 'Não foi comprado',
+			data: '09/03/2017',
             quantidade: 1
         },
         {
@@ -58,7 +60,8 @@ app.controller('cLista', function cLista($scope, $filter) {
             imagem: 'img/hamburger.png',
             nome: 'Hamburger',
             preco: 3.45,
-			status: 'comprado',
+			status: 'Não foi comprado',
+			data: '09/03/2017',
             quantidade: 1
         }
     ];
@@ -92,6 +95,7 @@ app.controller('cLista', function cLista($scope, $filter) {
                 imagem: scp.produtoImagem,
                 preco: scp.produtoPreco,
 				status: scp.produtostatus,
+				data: scp.produtodata,
                 quantidade: scp.produtoQuantidade
             });
         } else {
