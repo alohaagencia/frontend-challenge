@@ -1,4 +1,7 @@
 /* 
+ * AUTHOR: Murilo Caetano Figueiredo
+ * E-MAIL: murilo.ssk@hotmail.com
+ * 
  *  TODO:
  *      - ng-hide para Preço total enquanto estiver na lista de Listas
  *      ou mover o conteiner
@@ -25,7 +28,7 @@ app.controller('cLista', function cLista($scope, $filter) {
     scp.listas = [
         {
             id: 0,
-            nome: 'Front-end Challenge'
+            nome: 'Lista da Aloha'
         }
     ];
 
