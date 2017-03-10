@@ -1,0 +1,39 @@
+<br>
+<div class="alert alert-success"  ng-if=" prodCtrl.msgSuccess">
+  <h4>Produto cadastrado com sucesso!</h4>
+  <p>Para visualizar os produtos cadastrados basta clicar na aba "Listar"</p>
+</div>
+<form>
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="form-group">
+      <label for="">Titulo</label>
+      <input type="text" class="form-control" placeholder="Informe o titulo" ng-model="prodCtrl.product.title">
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="form-group">
+      <label for="">Preço</label>
+      <input type="number" class="form-control" placeholder="Informe o preço" ng-model="prodCtrl.product.price">
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+    <div class="form-group">
+      <label for="">Status</label>
+      <input type="number" class="form-control" placeholder="Informe o status" ng-model="prodCtrl.product.status">
+    </div>
+  </div>
+
+  
+  <div class="col-xs-12">
+    <div class="btn-group" role="group" >
+    <button class="btn btn-primary" ng-click="prodCtrl.create()" ng-if="prodCtrl.tabCreate">Incluir</button>
+    <button class="btn btn-info" ng-click="prodCtrl.update()" ng-if="prodCtrl.tabUpdate">Alterar</button>
+    <button class="btn btn-danger" ng-click="prodCtrl.delete()" ng-if="prodCtrl.tabDelete">Excluir</button>
+    <button class="btn btn-default" ng-click="prodCtrl.refresh()" >Cancelar</button>
+  </div>
+  </div>
+  
+
+</form>
