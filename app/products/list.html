@@ -1,5 +1,5 @@
 
-  <h4>Filtar por:</h4>
+  <h4>Filtrar por:</h4>
   <div class="col-xs-12 col-sm-6 col-md-4">
     <div class="form-group">
       <label for="">Titulo</label>
@@ -17,7 +17,7 @@
   <div class="col-xs-12 col-sm-6 col-md-4">
     <div class="form-group">
       <label for="">Status</label>
-      <input type="Number" class="form-control" ng-model="search.status">
+      <input type="text" class="form-control" ng-model="search.status">
     </div>
   </div>
 
@@ -34,23 +34,26 @@
           </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="prod in prodCtrl.list | filter:search">
-              <td>{{:: prod.title}}</td>
-              <td>{{:: prod.price}}</td>
-              <td>{{:: prod.status}}</td>
-              <td>{{:: prod.created_at}}</td>
-              <td><button class="btn btn-sm btn-info" ng-click="prodCtrl.showTabUpdate(prod, $index)"><i class="glyphicon glyphicon-pencil"></i></button></td>
-              <td><button class="btn btn-sm btn-danger" ng-click="prodCtrl.showTabDelete(prod, $index)"><i class="glyphicon glyphicon-trash"></i></button></td>
+            <tr ng-repeat="prod in prodCtrl.list | filter:search | getTotalList">
+              <td ng-if="!$last">{{:: prod.title}}</td>
+              <td ng-if="!$last">{{:: prod.price}}</td>
+              <td ng-if="!$last">{{:: prod.status}}</td>
+              <td ng-if="!$last">{{:: prod.created_at}}</td>
+              <td ng-if="!$last"><button class="btn btn-sm btn-info" ng-click="prodCtrl.showTabUpdate(prod, $index)"><i class="glyphicon glyphicon-pencil"></i></button></td>
+              <td ng-if="!$last"><button class="btn btn-sm btn-danger" ng-click="prodCtrl.showTabDelete(prod, $index)"><i class="glyphicon glyphicon-trash"></i></button></td>
+              <!-- Somente se for o ultimo iterator do ngRepeat-->
+              <td ng-if="$last" style="text-align: right;"><strong>Total </strong></td>
+              <td ng-if="$last"><strong>{{ prod | currency}}</strong></td>
+              <td ng-if="$last"></td>
+              <td ng-if="$last"></td>
+              <td ng-if="$last"></td>
+              <td ng-if="$last"></td>
+
             </tr>
           </tbody>
           <tfoot>
             <tr>
-              <td style="text-align: right;"><strong>Total </strong></td>
-              <td><strong>{{ prodCtrl.total }}</strong></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              
             </tr>
           </tfoot>
         </table>
