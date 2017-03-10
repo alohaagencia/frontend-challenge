@@ -1,0 +1,56 @@
+
+  <h4>Filtar por:</h4>
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="form-group">
+      <label for="">Titulo</label>
+      <input type="text" class="form-control" ng-model="search.title">
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="form-group">
+      <label for="">Preço</label>
+      <input type="text" class="form-control" ng-model="search.price">
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="form-group">
+      <label for="">Status</label>
+      <input type="Number" class="form-control" ng-model="search.status">
+    </div>
+  </div>
+
+
+<table class="table table-hover">
+          <thead>
+            <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Status</th>
+            <th>Data de Inclusão</th>
+            <th>Alterar</th>
+            <th>Remover</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="prod in prodCtrl.list | filter:search">
+              <td>{{:: prod.title}}</td>
+              <td>{{:: prod.price}}</td>
+              <td>{{:: prod.status}}</td>
+              <td>{{:: prod.created_at}}</td>
+              <td><button class="btn btn-sm btn-info" ng-click="prodCtrl.showTabUpdate(prod, $index)"><i class="glyphicon glyphicon-pencil"></i></button></td>
+              <td><button class="btn btn-sm btn-danger" ng-click="prodCtrl.showTabDelete(prod, $index)"><i class="glyphicon glyphicon-trash"></i></button></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td style="text-align: right;"><strong>Total </strong></td>
+              <td><strong>{{ prodCtrl.total }}</strong></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
