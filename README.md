@@ -17,8 +17,8 @@ Esse teste é para conhecermos seu código e como você resolve problemas.
 
 ## Tecnologias utilizadas
 
-- HTML.
-- CSS.
+- HTML
+- CSS
 - JAVASCRIPT
 - ANGULARJS
 - BOOTSTRAP
