@@ -2,31 +2,36 @@
 
 Esse teste é para conhecermos seu código e como você resolve problemas.
 
-## O que será avaliado:
+## Features:
 
-- Como você escreve seu código.
-- Como você pensa e resolve problemas.
-- Como você utiliza suas ferramentas.
+- A lista inicial utiliza os mesmos produtos informado pelo teste.
+- Listagem dos produtos em tempo real (sem refresh).
+- Lista pode ser filtrada por: (nome, preço, status, quantidade e data).
+- Adicionar Produtos a lista: (nome, preço, status, quantidade).
+- Remover e editar produto da lista
+- Mostra o valor total do preço dos produtos, incluindo o cálculo da quantidade.
+- EXTRA: Sistema de imagem para os produtos.
+- EXTRA: Sistema de status (comprado e não foi comprado).
+- EXTRA: Quantidade do produto.
+- EXTRA: Sistema de multi listas.
 
-Sinta-se a vontade para usar qualquer biblioteca/framework.
+## Tecnologias utilizadas
 
-## Sobre o desafio
+- HTML.
+- CSS.
+- JAVASCRIPT
+- ANGULARJS
+- BOOTSTRAP
+- JQUERY
 
-O desafio é criar uma lista de compra (não carrinho), os requisitos são:
+## Imcompletos:
 
-- A lista inicial deve consumir os dados do arquivo: `database.json`.
-- Listar os items da minha lista de compra.
-- Filtrar essa lista por: nome e status.
-- Adicionar Produtos a essa lista: (nome, preço, status e data de criação).
-- Remover produtos dessa lista.
-- Mostrar a quantidade de items e o valor total dessa lista.
+- Valor total de itens adicionado a lista
+- Sistema de data
 
-## Como participar:
+## Observações:
 
-- Faça um fork deste repositório.
-- Clone seu fork na sua máquina.
-- Crie um novo branch com o seguinte padrão `challenge/<seu-nome>`.
-- Resolva o desafio.
-- Faça uma PR para este repositório com instruções claras de como executar seu código.
-
-Após a PR nós iremos avaliar seu código e lhe daremos um feedback.
+- Não possuo muita experiência com o GitHub então provavelmente devo ter cometido erros.
+- Procurei implementar alguns adicionais ao teste que eu achei que seria interessante no projeto.
+- Pelo tempo que eu tive eu procurei desenvolver uma forma diferente para pegar os dados dos produtos.
+- Boa parte do código esta comentado para facilitar o entendimento.
