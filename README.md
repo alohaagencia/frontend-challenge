@@ -8,7 +8,7 @@ Esse teste é para conhecermos seu código e como você resolve problemas.
 - Listagem dos produtos em tempo real (sem refresh).
 - Lista pode ser filtrada por: (nome, preço, status, quantidade e data).
 - Adicionar Produtos a lista: (nome, preço, status, quantidade).
-- Remover e editar produto da lista
+- Remover e editar produto da lista.
 - Mostra o valor total do preço dos produtos, incluindo o cálculo da quantidade.
 - EXTRA: Sistema de imagem para os produtos.
 - EXTRA: Sistema de status (comprado e não foi comprado).
@@ -24,7 +24,7 @@ Esse teste é para conhecermos seu código e como você resolve problemas.
 - BOOTSTRAP
 - JQUERY
 
-## Imcompletos:
+## Incompletos:
 
 - Valor total de itens adicionado a lista
 - Sistema de data
