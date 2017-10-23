@@ -1,32 +1,30 @@
-# Front-end
+# frontend-challenge
 
-Esse teste é para conhecermos seu código e como você resolve problemas.
+> A Vue.js project
 
-## O que será avaliado:
+## Build Setup
 
-- Como você escreve seu código.
-- Como você pensa e resolve problemas.
-- Como você utiliza suas ferramentas.
+``` bash
+# install dependencies
+npm install
 
-Sinta-se a vontade para usar qualquer biblioteca/framework.
+# serve with hot reload at localhost:8080
+npm run dev
 
-## Sobre o desafio
+# build for production with minification
+npm run build
 
-O desafio é criar uma lista de compra (não carrinho), os requisitos são:
+# build for production and view the bundle analyzer report
+npm run build --report
 
-- A lista inicial deve consumir os dados do arquivo: `database.json`.
-- Listar os items da minha lista de compra.
-- Filtrar essa lista por: nome e status.
-- Adicionar Produtos a essa lista: (nome, preço, status e data de criação).
-- Remover produtos dessa lista.
-- Mostrar a quantidade de items e o valor total dessa lista.
+# run unit tests
+npm run unit
 
-## Como participar:
+# run e2e tests
+npm run e2e
 
-- Faça um fork deste repositório.
-- Clone seu fork na sua máquina.
-- Crie um novo branch com o seguinte padrão `challenge/<seu-nome>`.
-- Resolva o desafio.
-- Faça uma PR para este repositório com instruções claras de como executar seu código.
+# run all tests
+npm test
+```
 
-Após a PR nós iremos avaliar seu código e lhe daremos um feedback.
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
